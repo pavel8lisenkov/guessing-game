@@ -9,16 +9,16 @@ class GuessingGame {
     }
 
     guess() {
-      this.result = Math.ceil((this.max - this.min) / 2 + this.min);
+      this.result = Math.round((this.max - this.min) / 2 + this.min);
       return this.result;
     }
 
     lower() {
-      this.max = this.result - 1;
+      this.max = this.result;
     }
 
     greater() {
-      this.min = this.result + 1;
+      this.min = this.result;
     }
 }
 
